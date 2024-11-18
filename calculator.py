@@ -17,7 +17,7 @@ class Calculator:
         
 
     def divide(self, a, b):
-        if b == 0: # Fix for condition is 0
+        if b == 0: # Fix for condition is divide by zero
             raise ValueError("Cannot divide by zero")
         result = 0
         while a >= b: #Fix correct condition
@@ -26,7 +26,7 @@ class Calculator:
         return result
     
     def modulo(self, a, b):
-        if b == 0: # Fix for condition is 0
+        if b == 0: # Fix for condition is modulo by zero
             raise ValueError("Cannot modulo by zero")
         while a >= b: # Fix correct condition
             a = a-b
